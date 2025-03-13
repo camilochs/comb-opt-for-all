@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models">
+  <meta property="og:title" content="VisGraphVar: A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models"/>
+  <meta property="og:description" content="A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models"/>
+  <meta property="og:url" content="https://camilochs.github.io/visgraphvar-website/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/tasks-min.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> 
+
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="large vision-language models,computer vision, graph theory, LVLM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>VisGraphVar</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSEKCX9ZVP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NSEKCX9ZVP');
+  </script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><img src="static/images/favicon.ico" width="50"><strong>VisGraphVar:</strong> A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://camilochs.github.io/web/" target="_blank">Camilo Chacón Sartori</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.iiia.csic.es/~christian.blum/" target="_blank">Christian Blum</a><sup></sup>,</span>
+                  <span class="author-block">
+                    <a href="https://filippobistaffa.github.io/" target="_blank">Filippo Bistaffa</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Artificial Intelligence Research Institute (IIIA-CSIC)</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author: cchacon@iiia.csic.es</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                         <span class="link-block">
+                          <a href="https://ieeexplore.ieee.org/document/10855899" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <!--<span class="icon">
+                            <i class=""></i>
+                          </span>-->
+                          <span>IEEE Access</span>
+                        </a>
+                      </span>
+
+                 
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/camilochs/visgraphvar" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code + Supplementary</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/camilocs/VisGraphVar" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>🤗 Dataset</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/overview-results-min.png"> 
+      <h2 class="subtitle has-text-centered">
+        An overview of LVLM performance across the seven tasks (complete dataset).    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The fast advancement of Large Vision-Language Models (LVLMs) has shown immense po-
+            tential. These models are increasingly capable of tackling abstract visual tasks. Geometric
+            structures, particularly graphs with their inherent flexibility and complexity, serve as an
+            excellent benchmark for evaluating these models’ predictive capabilities. While human ob-
+            servers can readily identify subtle visual details and perform accurate analyses, our inves-
+            tigation reveals that state-of-the-art LVLMs exhibit consistent limitations in specific visual
+            graph scenarios, especially when confronted with stylistic variations. In response to these
+            challenges, we introduce <strong>VisGraphVar</strong> (<strong>Vis</strong>ual <strong>Graph</strong> <strong>Var</strong>iability), a customizable bench-
+            mark generator able to produce graph images for seven distinct task categories (detection,
+            classification, segmentation, pattern recognition, link prediction, reasoning, matching), de-
+            signed to systematically evaluate the strengths and limitations of individual LVLMs. We
+            use VisGraphVar to produce 990 graph images and evaluate six LVLMs, employing two
+            distinct prompting strategies, namely zero-shot and chain-of-thought. The findings demon-
+            strate that variations in visual attributes of images (e.g., node labeling and layout) and the
+            deliberate inclusion of visual imperfections, such as overlapping nodes, significantly affect
+            model performance. This research emphasizes the importance of a comprehensive evaluation
+            across graph-related tasks, extending beyond reasoning alone. VisGraphVar offers valuable
+            insights to guide the development of more reliable and robust systems capable of performing
+            advanced visual graph analysis.        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+
+
+
+<!-- Paper poster -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <h2 class="title">Tasks</h2> 
+      <h2 class="subtitle has-text-centered">
+     
+      A general overview of the seven tasks covered by VisGraphVar (1-7), each representing a different
+      challenge for LVLMs, enabling us to conduct a more detailed performance comparison and evaluation.      
+    </div>
+      <img src="static/images/tasks-min.png" > 
+     
+      </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop is-centered ">
+    <div class="hero-body">
+      
+      <h2 class="title">Results</h2>
+      <h2 class="subtitle has-text-centered">
+        Average LVLM performance (best to worst from left to right) regarding the VisGraphVar dataset.  
+      <img src="static/images/bar-average-model-all-tasks-min.png" > 
+          </div>
+
+       </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop is-centered ">
+    <div class="hero-body">
+      
+      <h2 class="title">1. The Striking Case of Spectral Layout</h2>
+      <h2 class="subtitle has-text-centered">
+        <img src="static/images/case1.png" > 
+          </div>
+
+       </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop is-centered ">
+    <div class="hero-body">
+      
+      <h2 class="title">2. Pixtral-12B and the Complex Task of Matching</h2>
+      <h2 class="subtitle has-text-centered">
+        <img src="static/images/case2.png" > 
+          </div>
+
+       </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop is-centered ">
+    <div class="hero-body">
+      
+      <h2 class="title">3. The Impact of Node Labels on Model Performance</h2>
+      <h2 class="subtitle has-text-centered">
+        <img src="static/images/case3.png" > 
+          </div>
+
+       </div>
+</section>
+
+
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{sartori2024visgraphvarbenchmarkgeneratorassessing,
+        title={VisGraphVar: A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models}, 
+        author={Camilo Chacón Sartori and Christian Blum and Filippo Bistaffa},
+        year={2024},
+        eprint={2411.14832},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2411.14832}, 
+  }</code></pre>
+    </div>
+</section>
+
+<section class="section" >
+  <div class="container is-max-desktop content">
+    <div class="columns is-centered has-text-centered">
+      <img src="static/images/csic.svg" width="300">
+    <img src="static/images/iiia-csic.png" width="300">
+  </div>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
