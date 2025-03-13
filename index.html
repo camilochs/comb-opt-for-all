@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models">
-  <meta property="og:title" content="VisGraphVar: A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models"/>
-  <meta property="og:description" content="A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models"/>
-  <meta property="og:url" content="https://camilochs.github.io/visgraphvar-website/"/>
+  <meta name="description" content="Using LLMs to Aid Non-Experts in Improving Optimization Algorithms">
+  <meta property="og:title" content="Combinatorial Optimization for All"/>
+  <meta property="og:description" content="Combinatorial Optimization for All: Using LLMs to Aid Non-Experts in Improving Optimization Algorithms"/>
+  <meta property="og:url" content="https://camilochs.github.io/comb-opt-for-all"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/images/tasks-min.png" />
   <meta property="og:image:width" content="1200"/>
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>VisGraphVar</title>
+  <title>Combinatorial Optimization for All</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -57,16 +57,14 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><img src="static/images/favicon.ico" width="50"><strong>VisGraphVar:</strong> A Benchmark Generator for Assessing Variability in Graph Analysis Using Large Vision-Language Models</h1>
+            <h1 class="title is-1 publication-title"><img width="40" src="static/images/iot.png"/> <strong>Combinatorial Optimization for All:</strong> <br>Using LLMs to Aid Non-Experts in Improving Optimization Algorithms</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://camilochs.github.io/web/" target="_blank">Camilo Chacón Sartori</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="https://www.iiia.csic.es/~christian.blum/" target="_blank">Christian Blum</a><sup></sup>,</span>
-                  <span class="author-block">
-                    <a href="https://filippobistaffa.github.io/" target="_blank">Filippo Bistaffa</a>
-                  </span>
+                  <a href="https://www.iiia.csic.es/~christian.blum/" target="_blank">Christian Blum</a><sup></sup></span>
+                 
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -79,11 +77,11 @@
                          <!-- Arxiv PDF link -->
                          <span class="link-block">
                           <a href="https://ieeexplore.ieee.org/document/10855899" target="_blank"
-                          class="external-link button is-normal is-rounded is-dark">
-                          <!--<span class="icon">
-                            <i class=""></i>
-                          </span>-->
-                          <span>IEEE Access</span>
+                          class="external-link button is-normal is-rounded is-dark" disabled>
+                          <span class="icon">
+                            <i class="fa fa-file-pdf"></i>
+                          </span>
+                          <span>Paper</span>
                         </a>
                       </span>
 
@@ -96,39 +94,68 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code + Supplementary</span>
+                    <span>Repository</span>
                   </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/camilochs/visgraphvar" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark" disabled>
+                  <span class="icon">
+                    <i class="fa fa-robot "></i>
+                  </span>
+                  <span>Chatbot (soon)</span>
+                </a>
                 </span>
 
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://huggingface.co/datasets/camilocs/VisGraphVar" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span>🤗 Dataset</span>
+                    class="external-link button is-normal is-rounded is-dark" disabled>
+                    <span class="icon">
+                      <i class="fa fa-pager"></i>
+                    </span>
+                    <span>alphaXiv</span>
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
 </section>
 
 
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <audio controls>
+      <source src="static/abstract.wav" type="audio/mpeg">
+    </audio>
+       
+    </div>
+    <div class="container is-max-desktop">
+      <strong>Podcast generated automatically with <a href="https://notebooklm.google.com/">NotebookLM</a>.</strong>
+     
+      </div>
+      <br>
+  <div class="container is-max-desktop">
+    
     <div class="hero-body">
-      <img src="static/images/overview-results-min.png"> 
+      <img src="static/images/abstract.png"> 
       <h2 class="subtitle has-text-centered">
-        An overview of LVLM performance across the seven tasks (complete dataset).    </div>
+        A non-expert user’s interaction with an LLM can enhance an existing genetic algorithm by incorporating
+        modern techniques.</div>
   </div>
+  
 </section>
 <!-- End teaser video -->
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -138,29 +165,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The fast advancement of Large Vision-Language Models (LVLMs) has shown immense po-
-            tential. These models are increasingly capable of tackling abstract visual tasks. Geometric
-            structures, particularly graphs with their inherent flexibility and complexity, serve as an
-            excellent benchmark for evaluating these models’ predictive capabilities. While human ob-
-            servers can readily identify subtle visual details and perform accurate analyses, our inves-
-            tigation reveals that state-of-the-art LVLMs exhibit consistent limitations in specific visual
-            graph scenarios, especially when confronted with stylistic variations. In response to these
-            challenges, we introduce <strong>VisGraphVar</strong> (<strong>Vis</strong>ual <strong>Graph</strong> <strong>Var</strong>iability), a customizable bench-
-            mark generator able to produce graph images for seven distinct task categories (detection,
-            classification, segmentation, pattern recognition, link prediction, reasoning, matching), de-
-            signed to systematically evaluate the strengths and limitations of individual LVLMs. We
-            use VisGraphVar to produce 990 graph images and evaluate six LVLMs, employing two
-            distinct prompting strategies, namely zero-shot and chain-of-thought. The findings demon-
-            strate that variations in visual attributes of images (e.g., node labeling and layout) and the
-            deliberate inclusion of visual imperfections, such as overlapping nodes, significantly affect
-            model performance. This research emphasizes the importance of a comprehensive evaluation
-            across graph-related tasks, extending beyond reasoning alone. VisGraphVar offers valuable
-            insights to guide the development of more reliable and robust systems capable of performing
-            advanced visual graph analysis.        </div>
+            Large Language Models (LLMs) have shown notable potential in code generation for optimization algorithms, unlocking exciting new opportunities. This paper examines how LLMs, rather than creating algorithms from scratch, can improve existing ones without the need for specialized expertise. To explore this potential, we selected 10 baseline optimization algorithms from various domains (metaheuristics, reinforcement learning, deterministic, and exact methods) to solve the classic Travelling Salesman Problem. The results show that our simple methodology often results in LLM-generated algorithm variants that improve over the baseline algorithms in terms of solution quality, reduction in computational time, and simplification of code complexity, all without requiring specialized optimization knowledge or advanced algorithmic implementation skills.
+                </div>
       </div>
     </div>
   </div>
 </section>
+
+
 <!-- End paper abstract -->
 
 
@@ -169,19 +181,31 @@
 
 
 
+<br>
 <!-- Paper poster -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+  <h2 class="title is-3">Results</h2>
+  <h2 class="subtitle has-text-centered">
+    Comparison of ten human-implemented algorithms with five AI-generated versions of each, applied to the Traveling Salesman Problem. Since this is a minimization problem, lower values indicate better performance.  
+<br><br>
+The analyzed algorithms are categorized into four distinct groups, as detailed below.</div>
+
+<img src="static/images/table.png" > 
+</section>
+<br>
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       
-      <h2 class="title">Tasks</h2> 
+      <h2 class="title">Metaheuristics</h2> 
       <h2 class="subtitle has-text-centered">
      
-      A general overview of the seven tasks covered by VisGraphVar (1-7), each representing a different
-      challenge for LVLMs, enabling us to conduct a more detailed performance comparison and evaluation.      
+        Comparison of the metaheuristic codes generated by the five LLMs with the original codes. Remember that
+        the TSP is a minimization problem, that is, the lower the values, the better. The y-axes are shown in a logarithmic scale.
     </div>
-      <img src="static/images/tasks-min.png" > 
+      <img src="static/images/mhs-results.webp" > 
      
       </div>
   </div>
@@ -192,10 +216,12 @@
   <div class="container is-max-desktop is-centered ">
     <div class="hero-body">
       
-      <h2 class="title">Results</h2>
+      <h2 class="title">Reinforcement Learning</h2>
       <h2 class="subtitle has-text-centered">
-        Average LVLM performance (best to worst from left to right) regarding the VisGraphVar dataset.  
-      <img src="static/images/bar-average-model-all-tasks-min.png" > 
+        Comparison of the reinforcement learning (RL) codes generated by the five LLMs with the original codes.
+Remember that the TSP is a minimization problem, that is, the lower the values, the better. The y-axes is shown in
+logarithmic scale.
+      <img src="static/images/rl-results.webp" > 
           </div>
 
        </div>
@@ -205,9 +231,26 @@
   <div class="container is-max-desktop is-centered ">
     <div class="hero-body">
       
-      <h2 class="title">1. The Striking Case of Spectral Layout</h2>
+      <h2 class="title">Deterministic/Heuristics</h2>
       <h2 class="subtitle has-text-centered">
-        <img src="static/images/case1.png" > 
+        Comparison of the deterministic heuristic codes generated by the five LLMs with the original codes. The bar
+plots show the performance gaps (in percent) relative to the original codes. Note that a positive value indicates that the
+LLM-generated code produces a better solution.
+        <img src="static/images/christofides-gap-results.webp" ></div>
+        <img src="static/images/convexhull-gap-results.webp" > </div>
+
+       </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop is-centered ">
+    <div class="hero-body">
+      
+      <h2 class="title">Exact</h2>
+      <h2 class="subtitle has-text-centered">
+        Comparison of the Branch & Bound (BB) codes generated by the five chosen LLMs with the original BB code (in terms of
+computation time). Each code was applied 30 times, and the y-axis is shown in a logarithmic scale.
+        <img src="static/images/bb-results.webp" > 
           </div>
 
        </div>
@@ -217,26 +260,53 @@
   <div class="container is-max-desktop is-centered ">
     <div class="hero-body">
       
-      <h2 class="title">2. Pixtral-12B and the Complex Task of Matching</h2>
+      <h2 class="title">Cyclomatic Complexity</h2>
       <h2 class="subtitle has-text-centered">
-        <img src="static/images/case2.png" > 
+        <img src="static/images/heatmap_algoritmos_llms.webp" > 
           </div>
 
        </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop is-centered ">
-    <div class="hero-body">
-      
-      <h2 class="title">3. The Impact of Node Labels on Model Performance</h2>
-      <h2 class="subtitle has-text-centered">
-        <img src="static/images/case3.png" > 
-          </div>
-
-       </div>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Summary</h2>
+        <div class="content has-text-justified">
+          <p>
+            Based on all evaluations presented in this paper, we can state that among the five LLMs tested, DeepSeek-R1
+            generally produces the best results, followed by GPT-O1. Gemini-exp-1206 performed well in certain cases, such as ACO and
+            ALNS; however, it underperformed in others, such as, for example, Christofides. Among all tested models,
+            Claude-3.5-Sonnet showed the lowest performance.
+            <br><br>
+            In summary, LLM-enhanced code versions clearly outperformed the original implementations in nine out of ten
+            cases/algorithms. Only for Q_Learning none of the models was able to improve the original code. In this case,
+            Llama-3.3-70b matched the performance of the original code.</div>
+      </div>
+    </div>
+  </div>
 </section>
+<!-- End paper abstract -->
 
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Conclusion</h2>
+        <div class="content has-text-justified">
+          <p>
+           
+Our research demonstrates that Large Language Models (LLMs) can significantly enhance the performance of 10 baseline optimization algorithms for a classic combinatorial problem: the Travelling Salesman Problem. These improvements not only resulted in higher solution quality but sometimes also in reduced computation times. By utilizing in-context prompting techniques, we were able to optimize existing code through better data structures, the incorporation of modern heuristics, and a reduction in code complexity. This approach is fully reproducible via a chatbot that is available on our project website.
+<br><br>
+Building on this foundation, future work will extend these advancements to less common optimization problems. Moreover, we plan to explore additional enhancements, such as leveraging LLMs to migrate to more efficient programming languages or integrating LLM-based agents to automate and continuously improve the enhancement process for existing algorithms.
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <!--End paper poster -->
 
