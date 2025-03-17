@@ -19,7 +19,7 @@ Homepage: [https://camilochs.github.io/comb-opt-for-all/](https://camilochs.gith
 ## Research Findings
 
 Our research is detailed in the paper:
-**[Combinatorial Optimization for All: Using LLMs to Aid Non-Experts in Improving Optimization Algorithms]()** – Check it out!
+**[Combinatorial Optimization for All: Using LLMs to Aid Non-Experts in Improving Optimization Algorithms](https://www.alphaxiv.org/abs/2503.10968)** – Check it out!
 
 ## Cite
 
