@@ -1,0 +1,23 @@
+You are an optimization algorithm expert. 
+
+I need to improve this {{algorithm name}} implementation for the travelling salesman problem (TSP) by incorporating state-of-the-art techniques. Focus on:
+
+1. Finding better quality solutions
+2. Faster convergence time
+
+Requirements:
+- Keep the main function signature: {{the signature of an the main function}}
+- Include detailed docstrings explaining:
+  * What improvement is implemented
+  * How it enhances performance
+  * Which state-of-the-art technique it is based on
+- All explanations must be within docstrings, no additional text
+- Check that there are no errors in the code
+
+IMPORTANT: 
+- Return ONLY Python code
+- Any explanation or discussion must be inside docstrings
+- At the end, include a comment block listing unmodified functions from the original code
+
+Current implementation:
+{{algorithm code}}
