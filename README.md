@@ -24,6 +24,13 @@ Our research is detailed in the paper:
 ## Cite
 
 ```
-
-
+@misc{sartori2025combinatorialoptimizationallusing,
+          title={Combinatorial Optimization for All: Using LLMs to Aid Non-Experts in Improving Optimization Algorithms}, 
+          author={Camilo Chacón Sartori and Christian Blum},
+          year={2025},
+          eprint={2503.10968},
+          archivePrefix={arXiv},
+          primaryClass={cs.AI},
+          url={https://arxiv.org/abs/2503.10968}, 
+        }
 ```
