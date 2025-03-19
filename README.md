@@ -8,11 +8,21 @@ Homepage: [https://camilochs.github.io/comb-opt-for-all/](https://camilochs.gith
 
 ## Contents of This Repository
 
-- The `prompt_template` and the prompts used to generate the 10 algorithms can be found in the `prompts/` directory.
-- The algorithms generated from these prompts for each LLM (Claude-3.5-Sonnet, GPT-O1, Llama-3.3-70b, Gemini-exp-1206, DeepSeek-R1) are stored in `results/algorithms_improved_LLMs/`.
-  - **Note:** In cases where an LLM failed to generate an algorithm (see Table 2 of the paper), we have omitted those prompts and only included the final algorithm.
-- The 10 original algorithms were extracted from the **[pyCombinatorial](https://github.com/Valdecy/pyCombinatorial)** framework (version from late February 2025).
+### 1. Prompts and Generated Algorithms
+- The `prompt_template` and the prompts used to generate the 10 algorithms are located in the `prompts/` directory.
+- The algorithms generated for each LLM (Claude-3.5-Sonnet, GPT-O1, Llama-3.3-70b, Gemini-exp-1206, DeepSeek-R1) are stored in `algorithms_improved_LLMs/`.  
+  - **Note:** If an LLM failed to generate an algorithm (see Table 2 of the paper), the corresponding prompt has been omitted, and only the final algorithm is included.
+
+### 2. Original Algorithms
+- The 10 original algorithms were extracted from the **[pyCombinatorial](https://github.com/Valdecy/pyCombinatorial)** framework (version from late February 2025).  
   - Special thanks to **Valdecy Pereira**, the creator of the framework, for kindly addressing our inquiries.
+
+### 3. Experimental Results
+- The results of all experiments, for each algorithm, are available in the `results/` directory.
+
+### 4. Algorithm Instances
+- The instances for each algorithm are stored in the `instances/` directory.  
+- Specific instances for the *branch and bound* algorithm can be found in `instances/branch_and_bound/`.
 
 > LLMs can assist not only researchers in enhancing their optimization algorithms but also non-experts seeking quick and efficient solutions, as well as those using them for educational purposes.
 
