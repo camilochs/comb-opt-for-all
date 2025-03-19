@@ -9,7 +9,7 @@ Homepage: [https://camilochs.github.io/comb-opt-for-all/](https://camilochs.gith
 ## Contents of This Repository
 
 ### 1. Prompts and Generated Algorithms
-- The [`prompt_template`](prompts/) and the prompts used to generate the 10 algorithms are located in the [`prompts/`](prompts/) directory.
+- The [`prompt_template`](prompts/Prompt_Template.txt) and the prompts used to generate the 10 algorithms are located in the [`prompts/`](prompts/) directory.
 - The algorithms generated for each LLM (Claude-3.5-Sonnet, GPT-O1, Llama-3.3-70b, Gemini-exp-1206, DeepSeek-R1) are stored in [`algorithms_improved_LLMs/`](algorithms_improved_LLMs/).  
   - **Note:** If an LLM failed to generate an algorithm (see Table 2 of the paper), the corresponding prompt has been omitted, and only the final algorithm is included.
 
