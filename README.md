@@ -41,6 +41,6 @@ Our research is detailed in the paper:
           eprint={2503.10968},
           archivePrefix={arXiv},
           primaryClass={cs.AI},
-          url={https://arxiv.org/abs/2503.10968}, 
-        }
+          url={https://arxiv.org/abs/2503.10968},
+}
 ```
