@@ -34,13 +34,16 @@ Our research is detailed in the paper:
 ## Cite
 
 ```
-@misc{sartori2025combinatorialoptimizationallusing,
-          title={Combinatorial Optimization for All: Using LLMs to Aid Non-Experts in Improving Optimization Algorithms}, 
-          author={Camilo Chacón Sartori and Christian Blum},
-          year={2025},
-          eprint={2503.10968},
-          archivePrefix={arXiv},
-          primaryClass={cs.AI},
-          url={https://arxiv.org/abs/2503.10968},
+@article{ChaconSartori_Blum_2026,
+  author = {Chacón Sartori, Camilo and Blum, Christian},
+  title = {Combinatorial Optimization for All: Using LLMs to Aid Non-Experts in Improving Optimization Algorithms},
+  journal = {Inteligencia Artificial},
+  year = {2026},
+  month = feb,
+  volume = {29},
+  number = {77},
+  pages = {108--132},
+  doi = {10.4114/intartif.vol29iss77pp108-132},
+  url = {https://journal.iberamia.org/index.php/intartif/article/view/2584}
 }
 ```
